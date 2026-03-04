@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Arrivals — Davious Store</title>
+    <meta name="description"
+        content="Shop the latest new arrivals at Davious Store. Fresh styles across dresses, outfits, tops and more." />
+    <meta property="og:title" content="New Arrivals — Davious Store" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-additions.css" />
+    <link rel="icon" type="image/png" href="assets/images/reallogo.png" />
+    <style>
+        .na-hero {
+            padding: 9rem 0 4rem;
+            background: var(--charcoal);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .na-hero::before {
+            content: 'NEW';
+            position: absolute;
+            font-family: var(--font-display);
+            font-size: 22vw;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.03);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        .na-hero .eyebrow {
+            color: var(--muted-gold);
+            margin-bottom: 1rem;
+        }
+
+        .na-hero h1 {
+            color: var(--cream);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        .na-hero p {
+            color: rgba(249, 245, 240, 0.6);
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+
+        .arrivals-category {
+            padding: 5rem 0 2rem;
+        }
+
+        .category-section-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .category-section-header h2 {
+            font-size: clamp(1.8rem, 3vw, 2.8rem);
+            font-weight: 300;
+            margin-top: 0.4rem;
+        }
+
+        .new-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: var(--charcoal);
+            color: var(--gold-light);
+            font-size: 0.6rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            padding: 0.3rem 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .ask-price {
+            font-size: 0.78rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--rose);
+        }
+
+        .category-divider {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 1rem 0 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" role="dialog" aria-label="Search">
+        <div class="search-form">
+            <p class="eyebrow" style="margin-bottom:2rem;">What are you looking for?</p>
+            <input type="text" placeholder="Search styles, categories..." aria-label="Search products" />
+        </div>
+        <button class="search-close" aria-label="Close search">&times;</button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="new-arrivals.html">New Arrivals</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Site Header -->
+    <header class="site-header scrolled" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">DAVIOUS <span>STORE</span></a>
+                <nav class="main-nav" aria-label="Primary navigation">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="new-arrivals.html" class="active">New Arrivals</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="header-search-btn" aria-label="Open search">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="7" />
+                            <path d="M21 21l-4.35-4.35" />
+                        </svg>
+                    </button>
+                    <button class="hamburger" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="na-hero">
+            <p class="eyebrow">Just Dropped</p>
+            <h1>New Arrivals</h1>
+            <p>Fresh styles added across all categories — be the first to wear them.</p>
+        </section>
+
+        <div class="container">
+
+            <!-- ══════════════════════════════════════
+           CATEGORY 1 — CLASSIC DRESSES
+           
+            ══════════════════════════════════════ -->
+            <div class="arrivals-category">
+                <div class="category-section-header animate-in">
+                    <div>
+                        <span class="new-tag">✦ New In</span>
+                        <h2 class="section-title">Classic Dresses</h2>
+                    </div>
+                    <a href="shop.html?cat=dresses" class="view-all-link">View All →</a>
+                </div>
+
+                <div class="products-grid animate-in">
+
+                    <article class="product-card" data-category="dresses">
+                        <div class="product-card-img">
+                            <img src="assets/images/Classic dress/IMG-20260205-WA0018.jpg" alt="Classic Dress"
+                                loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Classic Dresses</p>
+                            <h3 class="product-name">Classic Dress</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="dresses">
+                        <div class="product-card-img">
+                            <img src="assets/images/Classic dress/IMG-20260205-WA0026.jpg" alt="Classic Dress II"
+                                loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Classic Dresses</p>
+                            <h3 class="product-name">Classic Dress II</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="dresses">
+                        <div class="product-card-img">
+                            <img src="assets/images/Classic dress/IMG-20260205-WA0033.jpg" alt="Classic Dress III"
+                                loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Classic Dresses</p>
+                            <h3 class="product-name">Classic Dress III</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="dresses">
+                        <div class="product-card-img">
+                            <img src="assets/images/Classic dress/IMG-20260205-WA0020.jpg" alt="Classic Dress IV"
+                                loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Classic Dresses</p>
+                            <h3 class="product-name">Classic Dress IV</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <hr class="category-divider" />
+
+            <!-- ══════════════════════════════════════
+           CATEGORY 2 — DRESS FOR MOM
+            ══════════════════════════════════════ -->
+            <div class="arrivals-category">
+                <div class="category-section-header animate-in">
+                    <div>
+                        <span class="new-tag">✦ New In</span>
+                        <h2 class="section-title">Dress for Mom</h2>
+                    </div>
+                    <a href="shop.html?cat=dress-for-mom" class="view-all-link">View All →</a>
+                </div>
+
+                <div class="products-grid animate-in">
+
+                    <article class="product-card" data-category="dress-for-mom">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW DRESSES FOR MOM -->
+                            <img src="assets/images/Dress for Mom/IMG-20260209-WA0086.jpg" alt="Dress for Mom"
+                                loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Dress for Mom</p>
+                            <h3 class="product-name">Elegant Mom Dress</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="dress-for-mom">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW DRESSES FOR MOM -->
+                            <img src="assets/images/Dress for Mom/IMG-20260209-WA0087.jpg" alt="Mom Dress II"
+                                loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Dress for Mom</p>
+                            <h3 class="product-name">Mom Dress II</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="dress-for-mom">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW DRESSES FOR MOM -->
+                            <img src="assets/images/Dress for Mom/IMG-20260211-WA0011.jpg" alt="Mom Dress III"
+                                loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Dress for Mom</p>
+                            <h3 class="product-name">Mom Dress III</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="dress-for-mom">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW DRESSES FOR MOM -->
+                            <img src="assets/images/Dress for Mom/IMG-20260211-WA0273.jpg" alt="Mom Dress IV"
+                                loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Dress for Mom</p>
+                            <h3 class="product-name">Mom Dress IV</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <hr class="category-divider" />
+
+            <!-- ══════════════════════════════════════
+           CATEGORY 3 — COMPLETE MATCHING OUTFITS
+             ══════════════════════════════════════ -->
+            <div class="arrivals-category">
+                <div class="category-section-header animate-in">
+                    <div>
+                        <span class="new-tag">✦ New In</span>
+                        <h2 class="section-title">Complete Matching Outfits</h2>
+                    </div>
+                    <a href="shop.html?cat=complete-outfits" class="view-all-link">View All →</a>
+                </div>
+
+                <div class="products-grid animate-in">
+
+                    <article class="product-card" data-category="complete-outfits">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW COMPLETE MATCHING OUTFITS -->
+                            <img src="assets/images/Complete matching oufits/187a3ec27658499d99c68a836cfd73e8.jpg"
+                                alt="Complete Outfit" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Complete Outfits</p>
+                            <h3 class="product-name">Matching Complete Set</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="complete-outfits">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW COMPLETE MATCHING OUTFITS -->
+                            <img src="assets/images/Complete matching oufits/612cce4cc2844721a87587e7e671e3e8.jpg"
+                                alt="Matching Set II" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Complete Outfits</p>
+                            <h3 class="product-name">Matching Set II</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="complete-outfits">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW COMPLETE MATCHING OUTFITS -->
+                            <img src="assets/images/Complete matching oufits/20452359776c49da81d0d05118c668b3.jpg"
+                                alt="Matching Set III" loading="lazy"
+                                style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Complete Outfits</p>
+                            <h3 class="product-name">Matching Set III</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="complete-outfits">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW COMPLETE MATCHING OUTFITS -->
+                            <img src="assets/images/Complete matching oufits/e50829ec0cbb465ab36dca3bc7b6fec9.jpg"
+                                alt="Matching Set IV" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">Complete Outfits</p>
+                            <h3 class="product-name">Matching Set IV</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <hr class="category-divider" />
+
+            <!-- ══════════════════════════════════════
+           CATEGORY 4 — T-SHIRTS
+            ══════════════════════════════════════ -->
+            <div class="arrivals-category" style="padding-bottom:5rem;">
+                <div class="category-section-header animate-in">
+                    <div>
+                        <span class="new-tag">✦ New In</span>
+                        <h2 class="section-title">T-Shirts</h2>
+                    </div>
+                    <a href="shop.html?cat=tshirts" class="view-all-link">View All →</a>
+                </div>
+
+                <div class="products-grid animate-in">
+
+                    <article class="product-card" data-category="tshirts">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW T-SHIRTS -->
+                            <img src="assets/images/T shirt/IMG-20260204-WA0093.jpg" alt="T-Shirt Style 1"
+                                loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">T-Shirts</p>
+                            <h3 class="product-name">Classic Tee</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="tshirts">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW T-SHIRTS -->
+                            <img src="assets/images/T shirt/IMG-20260201-WA0017.jpg" alt="T-Shirt Style 2"
+                                loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">T-Shirts</p>
+                            <h3 class="product-name">Graphic Tee</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="tshirts">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW T-SHIRTS -->
+                            <img src="assets/images/T shirt/ab2ed52001f9e6b347f632dc635bfeec_1.jpeg"
+                                alt="T-Shirt Style 2" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">T-Shirts</p>
+                            <h3 class="product-name">Casual Tee</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="tshirts">
+                        <div class="product-card-img">
+                            <!-- CHANGE THE IMAGE TO ADD NEW T-SHIRTS -->
+                            <img src="assets/images/T shirt/IMG-20260204-WA0106.jpg" alt="T-Shirt Style 4"
+                                loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+                            <span class="product-badge badge-new">New</span>
+                            <div class="product-quick-actions">
+                                <a href="product.html" class="btn btn--primary">View Details</a>
+                                <button class="product-wishlist" aria-label="Add to wishlist"><svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-category-tag">T-Shirts</p>
+                            <h3 class="product-name">Printed Tee</h3>
+                            <p class="product-price ask-price">DM for Price</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </div><!-- /container -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">DAVIOUS <span>STORE</span></a>
+                    <p>Elegantly curated ladies' fashion for the modern woman.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/davious_fashion_store" class="social-link"
+                            aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                            </svg></a>
+                        <a href="https://www.facebook.com/Daviousstore" class="social-link" aria-label="Facebook"
+                            target="_blank" rel="noopener"><svg viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg></a>
+                        <a href="https://wa.me/+250787353993" class="social-link" aria-label="WhatsApp" target="_blank"
+                            rel="noopener"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg></a>
+                        <a href="https://www.threads.com/@davious_fashion_store" class="social-link"
+                            aria-label="Threads" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"
+                                stroke-width="1.8">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c2.67 0 4.87 1.7 5.67 4.07-.8-.27-1.63-.42-2.47-.42-1.12 0-2.17.3-3.07.82A3.5 3.5 0 0 0 8.5 14c0 1.93 1.57 3.5 3.5 3.5.87 0 1.67-.32 2.27-.84.17.5.27 1.03.27 1.59 0 .16-.01.32-.02.47A8 8 0 0 1 12 20a8 8 0 0 1-8-8 8 8 0 0 1 8-8zm2.2 5.8c.36.53.57 1.17.57 1.87 0 1.82-1.47 3.3-3.27 3.3-.97 0-1.84-.42-2.44-1.08.28.04.57.08.87.08 2.1 0 3.8-1.7 3.8-3.8 0-.14-.01-.27-.02-.41.17.01.34.04.49.04z" />
+                            </svg></a>
+                        <a href="https://www.snapchat.com/add/davious33" class="social-link" aria-label="Snapchat"
+                            target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                                <path
+                                    d="M12 2c-2.72 0-5 2.06-5 5.5v.78c-.32.14-.68.22-1 .22-.5 0-.9.21-1.1.57-.2.36-.15.8.13 1.18.54.73 1.3 1.27 2.17 1.6-.15.4-.36.77-.63 1.1C5.88 13.8 4.5 14.5 4.5 15.5c0 .28.22.5.5.5.2 0 .5-.07.9-.2.73-.23 1.5-.3 2.1-.3.1 0 .2 0 .3.01C8.7 16.7 10.2 18 12 18s3.3-1.3 3.7-2.49c.1-.01.2-.01.3-.01.6 0 1.37.07 2.1.3.4.13.7.2.9.2.28 0 .5-.22.5-.5 0-1-.88-1.7-1.57-2.55-.27-.33-.48-.7-.63-1.1.87-.33 1.63-.87 2.17-1.6.28-.38.33-.82.13-1.18-.2-.36-.6-.57-1.1-.57-.32 0-.68-.08-1-.22V7.5C17 4.06 14.72 2 12 2z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">All Products</a></li>
+                        <li><a href="new-arrivals.html">New Arrivals</a></li>
+                        <li><a href="shop.html?cat=dresses">Classic Dresses</a></li>
+                        <li><a href="shop.html?cat=dress-for-mom">Dress for Mom</a></li>
+                        <li><a href="shop.html?cat=complete-outfits">Complete Outfits</a></li>
+                        <li><a href="shop.html?cat=tshirts">T-Shirts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.9 19.79 19.79 0 0 1 1.62 3.23 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z" />
+                            </svg>
+                            <span>+250 787 353 993</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg>
+                            <a href="https://wa.me/+250787353993" target="_blank" rel="noopener">WhatsApp Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Davious Store. All rights reserved.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Dress Collection — Davious Store</title>
+    <meta name="description"
+        content="Shop our Classic Dress collection at Davious Store. Elegant, timeless fashion. Order via WhatsApp." />
+    <meta property="og:title" content="Classic Dress Collection — Davious Store" />
+    <meta property="og:type" content="product" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/images/reallogo.png" />
+</head>
+
+<body>
+
+    <!-- Image Zoom Overlay -->
+    <div class="zoom-overlay" role="dialog" aria-label="Image zoom">
+        <div class="placeholder-img" style="width:80vw;max-width:600px;aspect-ratio:2/3;background:var(--blush-light);">
+            <svg viewBox="0 0 24 24" style="width:48px;height:48px;stroke:var(--warm-gray);fill:none;stroke-width:1;">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" />
+            </svg>
+            <span>Zoomed Image</span>
+        </div>
+        <img id="zoom-img" src="" alt="Zoomed product image"
+            style="max-width:90vw;max-height:90vh;object-fit:contain;border-radius:2px;" />
+        <button class="zoom-close" aria-label="Close zoom">&times;</button>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" role="dialog" aria-label="Search">
+        <div class="search-form">
+            <p class="eyebrow" style="margin-bottom:2rem;">What are you looking for?</p>
+            <input type="text" placeholder="Search styles, categories..." aria-label="Search products" />
+        </div>
+        <button class="search-close" aria-label="Close search">&times;</button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Site Header -->
+    <header class="site-header scrolled" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">DAVIOUS <span>STORE</span></a>
+                <nav class="main-nav" aria-label="Primary navigation">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html" class="active">Shop</a>
+                    <a href="new-arrivals.html">New Arrivals</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="header-search-btn" aria-label="Open search">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="7" />
+                            <path d="M21 21l-4.35-4.35" />
+                        </svg>
+                    </button>
+                    <button class="hamburger" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Breadcrumb -->
+        <div style="padding: 7rem 0 0; background: var(--cream);">
+            <div class="container">
+                <nav aria-label="Breadcrumb"
+                    style="display:flex;gap:0.5rem;align-items:center;font-size:0.75rem;color:var(--warm-gray);padding-bottom:1rem;">
+                    <a href="index.html" style="color:var(--warm-gray);">Home</a>
+                    <span>/</span>
+                    <a href="shop.html" style="color:var(--warm-gray);">Shop</a>
+                    <span>/</span>
+                    <span style="color:var(--charcoal);">Classic Dress</span>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Product Detail -->
+        <section class="product-detail" aria-labelledby="product-name">
+            <div class="container">
+                <div class="product-detail-layout">
+
+                    <!-- Gallery -->
+                    <div class="product-gallery" aria-label="Product images">
+                        <div class="main-product-img" id="main-img-wrap" role="button" aria-label="Click to zoom">
+                            <img id="main-product-image"
+                                src="assets/images/Classic dress/90e86dd254fa406515719d182a00ac68_3.jpeg"
+                                alt="Classic Dress — Front view" style="width:100%;height:100%;object-fit:cover;" />
+                        </div>
+                        <div class="thumb-gallery" aria-label="Product thumbnails">
+                            <div class="thumb-img active" role="button" aria-label="View image 1"
+                                data-src="assets/images/Classic dress/90e86dd254fa406515719d182a00ac68_3.jpeg">
+                                <img src="assets/images/Classic dress/90e86dd254fa406515719d182a00ac68_3.jpeg"
+                                    alt="Classic Dress view 1" style="width:100%;height:100%;object-fit:cover;" />
+                            </div>
+                            <div class="thumb-img" role="button" aria-label="View image 2"
+                                data-src="assets/images/Classic dress/IMG-20260131-WA0048.jpg">
+                                <img src="assets/images/Classic dress/IMG-20260131-WA0048.jpg"
+                                    alt="Classic Dress view 2" style="width:100%;height:100%;object-fit:cover;" />
+                            </div>
+                            <div class="thumb-img" role="button" aria-label="View image 3"
+                                data-src="assets/images/Classic dress/IMG-20260131-WA0049.jpg">
+                                <img src="assets/images/Classic dress/IMG-20260131-WA0049.jpg"
+                                    alt="Classic Dress view 3" style="width:100%;height:100%;object-fit:cover;" />
+                            </div>
+                            <div class="thumb-img" role="button" aria-label="View image 4"
+                                data-src="assets/images/Classic dress/IMG-20260201-WA0060.jpg">
+                                <img src="assets/images/Classic dress/IMG-20260201-WA0060.jpg"
+                                    alt="Classic Dress view 4" style="width:100%;height:100%;object-fit:cover;" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="product-detail-info animate-in">
+                        <p class="eyebrow">Dresses</p>
+                        <h1 class="product-detail-name" id="product-name" data-product="Classic Dress">Classic Dress
+                        </h1>
+                        <p class="product-detail-price ask-price">DM for Price</p>
+
+                        <p class="product-detail-desc">
+                            A beautifully crafted classic dress with a timeless silhouette. Made with lightweight,
+                            breathable fabric
+                            that drapes elegantly and flatters all body types. Perfect for any occasion — from casual
+                            outings to
+                            special events.
+                        </p>
+
+                        <!-- Colour -->
+                        <div class="size-options" style="margin-bottom:1.5rem;">
+                            <p class="option-label">Colour — <span class="colour-label-name"
+                                    style="font-weight:400;text-transform:none;letter-spacing:0">Select a colour</span>
+                            </p>
+                            <div style="display:flex;gap:0.5rem;">
+                                <div class="color-swatch" style="background:#E8C4B0;" data-colour="Blush Pink"
+                                    title="Blush Pink"></div>
+                                <div class="color-swatch" style="background:#2C2520;" data-colour="Midnight Black"
+                                    title="Midnight Black"></div>
+                                <div class="color-swatch" style="background:#89A5C9;" data-colour="Sky Blue"
+                                    title="Sky Blue"></div>
+                                <div class="color-swatch" style="background:#C8B99A;" data-colour="Sand Beige"
+                                    title="Sand Beige">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Size -->
+                        <div class="size-options">
+                            <p class="option-label">
+                                Size
+                                <a href="#"
+                                    style="margin-left:1rem;font-weight:300;text-transform:none;letter-spacing:0;font-size:0.75rem;color:var(--rose);border-bottom:1px solid currentColor;">Size
+                                    Guide</a>
+                            </p>
+                            <div class="size-grid">
+                                <button class="size-btn" data-size="XS">XS</button>
+                                <button class="size-btn" data-size="S">S</button>
+                                <button class="size-btn" data-size="M">M</button>
+                                <button class="size-btn" data-size="L">L</button>
+                                <button class="size-btn" data-size="XL">XL</button>
+                            </div>
+                        </div>
+
+                        <!-- Order summary -->
+                        <div id="order-summary"
+                            style="display:none;background:rgba(37,211,102,0.08);border:1px solid rgba(37,211,102,0.3);padding:0.85rem 1.1rem;font-size:0.82rem;margin-bottom:1rem;border-radius:2px;">
+                            <span
+                                style="display:block;font-size:0.65rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#25D366;margin-bottom:0.4rem;">Your
+                                Order Summary</span>
+                            <span id="summary-text"></span>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="detail-actions">
+                            <a id="whatsapp-order-btn" href="#" data-phone="250787353993" class="btn btn--whatsapp"
+                                target="_blank" rel="noopener" aria-label="Order via WhatsApp">
+                                <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:white;flex-shrink:0;">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                                </svg>
+                                Order via WhatsApp
+                            </a>
+                            <a href="contact.html" class="btn btn--outline" style="justify-content:center;">
+                                Enquire via Email
+                            </a>
+                        </div>
+
+                        <!-- Product Details Accordion -->
+                        <div style="margin-bottom:1.5rem;border-top:1px solid var(--border);">
+                            <details style="border-bottom:1px solid var(--border);padding:1rem 0;">
+                                <summary
+                                    style="font-size:0.72rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer;color:var(--charcoal);">
+                                    Product Details</summary>
+                                <div
+                                    style="font-size:0.85rem;color:var(--warm-gray);font-weight:300;line-height:1.9;margin-top:1rem;">
+                                    <p>• 100% viscose fabric, lightweight &amp; breathable</p>
+                                    <p>• Elegant classic silhouette</p>
+                                    <p>• Available in multiple colours</p>
+                                    <p>• Available in XS–XL</p>
+                                </div>
+                            </details>
+                            <details style="border-bottom:1px solid var(--border);padding:1rem 0;">
+                                <summary
+                                    style="font-size:0.72rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer;color:var(--charcoal);">
+                                    Care Instructions</summary>
+                                <div
+                                    style="font-size:0.85rem;color:var(--warm-gray);font-weight:300;line-height:1.9;margin-top:1rem;">
+                                    <p>• Hand wash or delicate machine wash (30°C)</p>
+                                    <p>• Do not tumble dry</p>
+                                    <p>• Iron on low heat</p>
+                                    <p>• Dry flat in shade</p>
+                                </div>
+                            </details>
+                            <details style="padding:1rem 0;">
+                                <summary
+                                    style="font-size:0.72rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;cursor:pointer;color:var(--charcoal);">
+                                    Delivery &amp; Returns</summary>
+                                <div
+                                    style="font-size:0.85rem;color:var(--warm-gray);font-weight:300;line-height:1.9;margin-top:1rem;">
+                                    <p>• We deliver nationwide. Contact us for delivery details.</p>
+                                    <p>• Returns accepted within 14 days of receipt (unworn, tagged).</p>
+                                    <p>• Contact us via WhatsApp or email to arrange returns.</p>
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- Share -->
+                        <div class="share-row">
+                            <span>Share</span>
+                            <a href="#" class="share-btn" aria-label="Share on Instagram">
+                                <svg viewBox="0 0 24 24">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                                    <circle cx="12" cy="12" r="4" />
+                                </svg>
+                            </a>
+                            <a href="#" class="share-btn" aria-label="Share on Facebook">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="share-btn" aria-label="Share via WhatsApp">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Products -->
+                <div style="padding:5rem 0 0;">
+                    <div class="section-header animate-in">
+                        <div class="section-header-text">
+                            <p class="eyebrow">You May Also Love</p>
+                            <h2 class="section-title">More Classic Styles</h2>
+                        </div>
+                        <a href="shop.html" class="view-all-link">View All →</a>
+                    </div>
+                    <div class="products-grid" style="grid-template-columns:repeat(4,1fr);">
+                        <article class="product-card animate-in" data-category="dresses">
+                            <div class="product-card-img">
+                                <img src="assets/images/Classic dress/IMG-20260201-WA0070.jpg"
+                                    alt="Classic Dress Style 2" loading="lazy"
+                                    style="width:100%;height:100%;object-fit:cover;" />
+                                <div class="product-quick-actions"><a href="product-classic-dress.html"
+                                        class="btn btn--primary">View
+                                        Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category-tag">Dresses</p>
+                                <h3 class="product-name">Classic Style II</h3>
+                                <p class="product-price ask-price">DM for Price</p>
+                            </div>
+                        </article>
+                        <article class="product-card animate-in" data-category="dresses">
+                            <div class="product-card-img">
+                                <img src="assets/images/Classic dress/IMG-20260202-WA0001.jpg"
+                                    alt="Classic Dress Style 3" loading="lazy"
+                                    style="width:100%;height:100%;object-fit:cover;" />
+                                <div class="product-quick-actions"><a href="product-classic-dress.html"
+                                        class="btn btn--primary">View
+                                        Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category-tag">Dresses</p>
+                                <h3 class="product-name">Classic Style III</h3>
+                                <p class="product-price ask-price">DM for Price</p>
+                            </div>
+                        </article>
+                        <article class="product-card animate-in" data-category="dresses">
+                            <div class="product-card-img">
+                                <img src="assets/images/Classic dress/IMG-20260202-WA0002.jpg"
+                                    alt="Classic Dress Style 4" loading="lazy"
+                                    style="width:100%;height:100%;object-fit:cover;" />
+                                <div class="product-quick-actions"><a href="product-classic-dress.html"
+                                        class="btn btn--primary">View
+                                        Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category-tag">Dresses</p>
+                                <h3 class="product-name">Classic Style IV</h3>
+                                <p class="product-price ask-price">DM for Price</p>
+                            </div>
+                        </article>
+                        <article class="product-card animate-in" data-category="dresses">
+                            <div class="product-card-img">
+                                <img src="assets/images/Classic dress/IMG-20260202-WA0003.jpg"
+                                    alt="Classic Dress Style 5" loading="lazy"
+                                    style="width:100%;height:100%;object-fit:cover;" />
+                                <div class="product-quick-actions"><a href="product-classic-dress.html"
+                                        class="btn btn--primary">View
+                                        Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-category-tag">Dresses</p>
+                                <h3 class="product-name">Classic Style V</h3>
+                                <p class="product-price ask-price">DM for Price</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">DAVIOUS <span>STORE</span></a>
+                    <p>Elegantly curated ladies' fashion for the modern woman.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                            </svg></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg></a>
+                        <a href="https://wa.me/+250787353993" class="social-link" aria-label="WhatsApp"><svg
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">All Products</a></li>
+                        <li><a href="product-classic-dress.html">Classic Dresses</a></li>
+                        <li><a href="product-dress-for-mom.html">Dress for Mom</a></li>
+                        <li><a href="product-complete-outfits.html">Complete Outfits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.9 19.79 19.79 0 0 1 1.62 3.23 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z" />
+                            </svg><span>+250 787 353 993</span></div>
+                        <div class="footer-contact-item"><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg><a href="https://wa.me/+250787353993" target="_blank" rel="noopener">WhatsApp Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Davious Store. All rights reserved.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

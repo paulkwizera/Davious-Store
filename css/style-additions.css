@@ -1,0 +1,74 @@
+/* =============================================
+   PRICE NOTICE — No fixed prices
+   ============================================= */
+.price-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(196, 168, 130, 0.12);
+  border: 1px solid rgba(196, 168, 130, 0.4);
+  border-left: 3px solid var(--muted-gold);
+  padding: 0.9rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  color: var(--warm-gray);
+  font-weight: 300;
+  border-radius: 2px;
+}
+
+.price-notice svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--muted-gold);
+  fill: none;
+  stroke-width: 1.5;
+  flex-shrink: 0;
+}
+
+.price-notice a {
+  color: var(--rose);
+  font-weight: 500;
+  border-bottom: 1px solid currentColor;
+}
+
+.price-notice-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--muted-gold);
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 0.85rem;
+  color: var(--warm-gray);
+  font-weight: 300;
+  border-radius: 2px;
+}
+
+.price-notice-banner svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--muted-gold);
+  fill: none;
+  stroke-width: 1.5;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.price-notice-banner strong { color: var(--charcoal); font-weight: 600; }
+.price-notice-banner a { color: var(--rose); font-weight: 500; border-bottom: 1px solid currentColor; }
+
+/* "Contact for Price" tag instead of a price */
+.product-price.ask-price {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-gold);
+  background: rgba(196, 168, 130, 0.1);
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  border: 1px solid rgba(196, 168, 130, 0.35);
+}
